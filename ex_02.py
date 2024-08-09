@@ -1,10 +1,19 @@
 # NOTE: Do not modify function name, if you do, tests will not pass!
 # Modify the function to return largest number from `numbers` list
 def largest_number(numbers):
+    if len(numbers)==0:
+        return -1
+    
+    max=0
+    
+    for i in  numbers:
+        if i>max:
+            max=i
+   
+    return max
+        
 
-    # TODO: Implement the function to solve this exercise
-
-    return None
+   
 
 
 def run_test(expected,numbers, weight, title, error_message):

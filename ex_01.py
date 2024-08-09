@@ -1,7 +1,7 @@
 # NOTE: Do not modify function name, if you do, tests will not pass!
 # Modify the return value to pass the test
 def hello():
-    return "Edit this text!"
+    return "Hello, World!"
 
 
 def run_test(expected, weight, title, error_message):
