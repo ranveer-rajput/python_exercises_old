@@ -2,11 +2,16 @@
 
 # Modify the function to check if x exists in `numbers` list
 def search_number(x,numbers):
-
-    # TODO: Implement the function to solve this exercise
-
-    return None
-
+    if len(numbers)==0:
+        return False
+  
+    for i in numbers:
+        if i==x:
+            return True
+        
+    return False
+    
+        
 
 def run_test(ans,expected,numbers, weight, title, error_message):
     res = search_number(expected,numbers)
