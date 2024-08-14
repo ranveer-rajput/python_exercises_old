@@ -11,5 +11,10 @@ def run_test(expected, weight, title, error_message):
     else:
         print(f"Failed:{title}:{error_message}")
 
-run_test(expected="Hello, World!", weight=10, title="HelloWorldTest", error_message="Edit the return text according to the required value")
 
+run_test(
+    expected="Hello, World!",
+    weight=10,
+    title="HelloWorldTest",
+    error_message="Edit the return text according to the required value",
+)
