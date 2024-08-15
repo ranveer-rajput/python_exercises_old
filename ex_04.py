@@ -20,10 +20,22 @@ whatever you get.
 
 def get_series(digits, length):
     result = []
-
-    # Implement your logic here
-
+    i = 0 
+    while i <= len(digits) - length:
+        substring = ''
+        j = 0
+           
+        while j < length:
+            substring =substring+ str(digits[i + j]) 
+            j += 1  
+        
+        result.append(substring) 
+        i += 1  
     return result
+
+
+# digits = [1, 2, 3, 4]
+# print(get_series(digits, 2)) 
 
 
 def run_test(digits, length, expected, weight, title, hint):
