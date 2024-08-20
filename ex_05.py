@@ -23,6 +23,16 @@ The rules of `raindrops` are that if a given number:
 
 def raindrops(n):
     rain_str = ""
+    
+    if n % 3 == 0:
+        rain_str += "Pling"
+    if n % 5 == 0:
+        rain_str += "Plang"
+    if n % 7 == 0:
+        rain_str += "Plong"
+
+    if not rain_str:
+        return str(n)
 
     # Implement your logic here
 
