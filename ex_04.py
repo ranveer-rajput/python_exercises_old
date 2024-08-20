@@ -17,50 +17,44 @@ And if you ask for a 6-digit series from a 5-digit string, you deserve
 whatever you get.
 """
 
-
 # def get_series(digits, length):
 #     result = []
-#     i = 0 
+#     i = 0
 #     while i <= len(digits) - length:
 #         substring = ''
 #         j = 0
-           
+
 #         while j < length:
-#             substring =substring+ str(digits[i + j]) 
-#             j += 1  
-        
-#         result.append(substring) 
-#         i += 1  
+#             substring =substring+ str(digits[i + j])
+#             j += 1
+
+#         result.append(substring)
+#         i += 1
 #     return result
-
-
-
 
 
 # def get_series(digits,length):
 #     result=[]
-#     i=0 
+#     i=0
 #     while i<=len(digits)-length:
-#       
+#
 #         substring=digits[i:i+length]
 #         result.append(substring)
-                   
+
 #         i=i+1
 #     return result
 
 
-
-def get_series(digits,length):
-    result=[]
-    for i in range(len(digits)-length+1):
-        substr=digits[i:i+length]
+def get_series(digits, length):
+    result = []
+    for i in range(len(digits) - length + 1):
+        substr = digits[i : i + length]
         result.append(substr)
     return result
 
 
-
 # digits = [1, 2, 3, 4]
-# print(get_series(digits, 2)) 
+# print(get_series(digits, 2))
 
 
 def run_test(digits, length, expected, weight, title, hint):
