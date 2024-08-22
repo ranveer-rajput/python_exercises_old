@@ -6,7 +6,8 @@ class ListOperations:
         :param x: The first list
         :param y: The second list
         """
-        pass
+        self.x=x
+        self.y=y
 
     def merge(self):
         """
@@ -22,7 +23,7 @@ class ListOperations:
         - Output: [1,4,1,6,2,3,5,2]
         - Explanation: Duplicate items are not removed from the merged list
         """
-        pass
+        return self.x+self.y
 
 
 # Test class
